@@ -3,60 +3,67 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package midtermreviewcodeforpartc;
+package midtermexam_versiona_extensioncode;
 
 /**
- * aman
- * A class that models a User for Uno Online.
- * The user has a name and a password.
+ * Aman
+ * The user profile for the OnlineVids system. The user has a userID
+ * and a favourite genre that must be one of the choices in the
+ * genres array. This code is to be used for SYST 17796 midterm exam.
+ * Students are reminded to add themselves as modifiers when editing the
+ * code.
  * @author dancye, 2019
  */
-public class User 
+public class UserProfile 
 {
-    private String name;
-    private String password;
+    
+    private String userID;//the userID
+    private String genre;// the user's preferred genre of movie
+    private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
     
     /**
-     * a constructor that takes in the user's name and password
-     * @param givenName
-     * @param givenPass 
+     * A constructor that takes in the userID and the favourite genre
+     * @param givenID the ID to assign to this user
+     * @param givenGenre the users favourite genre
      */
-    public User(String givenName, String givenPass)
+    public UserProfile(String givenID, String givenGenre)
     {
-        name = givenName;
-        password=givenPass;
-    }
-
-    /** The getter for the user name
-     * @return the name
-     */
-    public String getName() {
-        return name;
+        userID = givenID;
+        genre= givenGenre;
     }
 
     /**
-     * The setter for the user name
-     * @param givenName the name to set
+     * A getter for the userID
+     * @return the userID
      */
-    public void setName(String givenName) {
-        name = givenName;
+    public String getUserID() {
+        return userID;
     }
 
     /**
-     * The getter for the password
-     * @return the password
+     * @param userID the userID to set
      */
-    public String getPassword() {
-        return password;
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    /**
+     * A getter for the genre
+     * @return the genre
+     */
+    public String getGenre() {
+        return genre;
+    }
+
+    /**
+     * @param genre the genre to set
+     */
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
     
-    /**
-     * A setter for the password
-     * @param givenPass 
-     */
-    public void setPassword(String givenPass)
-    {
-        password = givenPass;
-    }
     
-}
+    
+    
+    
+}//end class
