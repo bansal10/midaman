@@ -6,6 +6,7 @@
 package midtermreviewcodeforpartc;
 
 /**
+ * aman
  * A class that models a User for Uno Online.
  * The user has a name and a password.
  * @author dancye, 2019
